@@ -1,0 +1,120 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+body {
+    background-color: rgba(174, 192, 16, 0.526);
+    color: rgb(245, 189, 8);
+    height: 100vh;
+    width: 100%;
+}
+
+.top-bar {
+    background-color: royalblue;
+    color: white;
+    text-align: center;
+    padding-top: 10px;  /**/
+    height: 1.7em;
+    font-size: 1.5em;
+    border-bottom: 4px solid darkblue;
+    border-radius: 20px;
+    border: 2px solid beige;
+    font-size: 2.5em;
+    text-shadow: 3px 3px 3px black;
+    width: 100%;
+}
+
+.top-bar::before{  /**/
+    content: "\1F4DA ";
+    /* font-size: 1.5em; */
+}
+
+.quiz-container {
+    height: auto;
+    background-color: rgba(91, 19, 91, 0.888);
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 2em;
+    border-radius: 20px;
+    padding: 1rem;
+    border: 1px solid beige;
+}
+
+.quiz .slide .question{
+    text-align: center;
+    font-size: 2em;
+    padding: 0.8em;
+    color: #00ff26; /**/
+    font-weight: bold; /**/
+    background-color: rgb(22, 99, 99);
+    text-shadow: 2px 3px 3px rgb(162, 162, 109);
+    border-radius: 10px;
+    border: 0.5px solid beige;
+}
+
+
+.quiz .slide .answers{
+    margin-top: 3em;
+}
+
+.quiz .slide .answer{
+    margin-left: 20%;
+    width: 55%;
+    font-size: 1.5em; /**/
+    padding: 15px;
+    border: 0.8px solid gold;
+    margin-bottom: 10px;
+    border-radius: 25px;
+    text-shadow: 3px 3px 4px grey;
+
+}
+
+.prev-next-btn {
+    /* text-align: center; */
+    margin-top: 2em;
+    transform: translateX(28%);
+}
+
+.submit-wrapper {
+    /* text-align: center; */
+    margin-top: 1em;
+    transform: translate(37%);
+}
+
+
+.previous-btn, .next-btn, .submit-btn{
+    width: 3cm;
+    padding: 5px;
+    font-size: 1.2em;
+    font-weight: 400;
+    border-radius: 30px;
+    margin-left: 6%;
+    cursor: pointer;
+}
+
+.previous-btn {
+    margin-right: 2em;
+}
+
+
+
+.next-btn {
+    background-color: royalblue;
+    color: white;
+    border: 1px solid gold;
+    font-weight: bold
+}
+
+
+.results {
+    text-align: center;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    font-size: 1.2em;
+    font-weight: bold;
+    padding: 20px;
+    background-color: rgba(255, 228, 196, 0.7);
+    border-radius: 15px;
+    border: 1px solid gold;
+    color: rgb(115, 5, 5);
+}
