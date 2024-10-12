@@ -15,7 +15,8 @@ const questions = [
         answers: {
             a: "Oxygen",
             b: "Carbon Dioxide",
-            c: "Nitrogen"
+            c: "Nitrogen",
+            d: "Hydrogen"
         },
         correctAnswer: "b"
     },
@@ -25,7 +26,8 @@ const questions = [
         answers: {
             a: "HTML",
             b: "JavaScript",
-            c: "CSS"
+            c: "CSS",
+            d: "Python"
         },
         correctAnswer: "b"
     },
@@ -35,7 +37,8 @@ const questions = [
         answers: {
             a: "Atom",
             b: "Cell",
-            c: "Molecule"
+            c: "Molecule",
+            d: "Nucleus"
         },
         correctAnswer: "b"
     },
@@ -45,7 +48,8 @@ const questions = [
         answers: {
             a: "Rome",
             b: "Madrid",
-            c: "Paris"
+            c: "Paris",
+            d: "Berlin"
         },
         correctAnswer: "c"
     },
@@ -55,7 +59,8 @@ const questions = [
         answers: {
             a: "Harper Lee",
             b: "Mark Twain",
-            c: "J.K. Rowling"
+            c: "J.K. Rowling",
+            d: "Ernest Hemingway"
         },
         correctAnswer: "a"
     },
@@ -65,7 +70,8 @@ const questions = [
         answers: {
             a: "Earth",
             b: "Mars",
-            c: "Jupiter"
+            c: "Jupiter",
+            d: "Saturn"
         },
         correctAnswer: "c"
     },
@@ -75,7 +81,8 @@ const questions = [
         answers: {
             a: "90°C",
             b: "100°C",
-            c: "110°C"
+            c: "110°C",
+            d: "120°C"
         },
         correctAnswer: "b"
     },
@@ -85,7 +92,8 @@ const questions = [
         answers: {
             a: "Vincent van Gogh",
             b: "Leonardo da Vinci",
-            c: "Pablo Picasso"
+            c: "Pablo Picasso",
+            d: "Claude Monet"
         },
         correctAnswer: "b"
     },
@@ -95,7 +103,8 @@ const questions = [
         answers: {
             a: "Gold",
             b: "Oxygen",
-            c: "Silver"
+            c: "Silver",
+            d: "Sodium"
         },
         correctAnswer: "b"
     },
@@ -105,7 +114,8 @@ const questions = [
         answers: {
             a: "1",
             b: "2",
-            c: "3"
+            c: "3",
+            d: "5"
         },
         correctAnswer: "b"
     },
@@ -115,7 +125,8 @@ const questions = [
         answers: {
             a: "Venus",
             b: "Mars",
-            c: "Saturn"
+            c: "Saturn",
+            d: "Jupiter"
         },
         correctAnswer: "b"
     },
@@ -125,7 +136,8 @@ const questions = [
         answers: {
             a: "Buzz Aldrin",
             b: "Neil Armstrong",
-            c: "Yuri Gagarin"
+            c: "Yuri Gagarin",
+            d: "Alan Shepard"
         },
         correctAnswer: "b"
     },
@@ -135,7 +147,8 @@ const questions = [
         answers: {
             a: "Gold",
             b: "Iron",
-            c: "Diamond"
+            c: "Diamond",
+            d: "Copper"
         },
         correctAnswer: "c"
     },
@@ -145,7 +158,8 @@ const questions = [
         answers: {
             a: "Atlantic Ocean",
             b: "Indian Ocean",
-            c: "Pacific Ocean"
+            c: "Pacific Ocean",
+            d: "Arctic Ocean"
         },
         correctAnswer: "c"
     },
@@ -155,7 +169,8 @@ const questions = [
         answers: {
             a: "NaCl",
             b: "H2O",
-            c: "CO2"
+            c: "CO2",
+            d: "KCl"
         },
         correctAnswer: "a"
     }
@@ -224,7 +239,7 @@ function buildQuiz() { /// 2
 
         const questionElement = document.createElement('div');
         questionElement.setAttribute('class', 'question');
-        questionElement.innerText = question.question;
+        questionElement.innerText = `${question.id}. ${question.question}`;
 
         slideElement.appendChild(questionElement);
 
@@ -326,8 +341,7 @@ function initialize() { ///3
 initialize();
 
 
-const score_board=document.getElementById("scoreBoard")
-document.body.appendChild(score_board)
+
 
 
 
@@ -339,8 +353,6 @@ function addButtons(){
         button.innerText=n
         button.style.background="none";
         button.style.borderRadius="30px"
-        score_board.appendChild(button)
-        score_board.appendChild(br)
         n*=10;
     }
 }
