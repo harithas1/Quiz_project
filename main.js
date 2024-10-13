@@ -345,19 +345,7 @@ initialize();
 
 
 
-function addButtons(){
-    let n=1
-    for(let i=0; i<10; i++){
-        let button = document.createElement("button")
-        let br=document.createElement("br")
-        button.innerText=n
-        button.style.background="none";
-        button.style.borderRadius="30px"
-        n*=10;
-    }
-}
 
-addButtons()
 
 
 
